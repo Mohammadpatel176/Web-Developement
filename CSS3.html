@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000000,0 0 25px blue,0 0 5px darkblue;
+            background-attachment: fixed;
+           
+        }
+        #box{
+            background-color: lightcoral;
+            height: 20mm;
+            width: 20mm;
+            margin: 5px 5px;
+            box-shadow: 5px 5px 5px blue;
+        }
+        @media screen and(min-width:400px) {
+            body{
+                background-color: lightgreen;
+            }
+            
+        }
+        @media screen and (min-width:800px){
+            body{
+                background-color: rgb(211, 185, 213);
+            }
+        }
+
+        @media screen and(min-width:900px) {
+            .ori{
+                background-color: lightgreen;
+            }
+            
+        }
+        div.a{
+            height:30mm;
+            width: 30mm;
+            background-color: red;
+            transform: rotate(20deg);
+        }
+        div.b{
+            height: 30mm;
+            width: 30mm;
+            background-color: red;
+            transform: skewy(20deg);
+        }
+        div.c{
+            height: 30mm;
+            width: 30mm;
+            background-color: red;
+            transform: scale(5px,5px);
+        }
+        
+        div.lr{
+            height: 30mm;
+            width: 30mm;
+            background-image: linear-gradient(to right,red,yellow,violet);
+        }
+        div.tb{
+            height: 30mm;
+            width: 30mm;
+            background-image: linear-gradient(to bottom right,red,yellow,violet);
+        }
+        div.angle{
+            height: 30mm;
+            width: 30mm;
+            background-image: linear-gradient(90deg,red,yellow,violet);
+        }
+        div.mliner{
+            height: 30mm;
+            width: 30mm;
+            background-image: repeating-linear-gradient(red 5%,yellow 15%,green 50%)
+        }
+        
+        div.normal{
+            height: 30mm;
+            width: 50mm;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        div.persent{
+            height: 30mm;
+            width: 50mm;
+            background-image: radial-gradient(red 5%,yellow 15%,green 50%)
+        }
+        div.shape{
+            height: 30mm;
+            width: 50mm;
+            background-image: radial-gradient(circle,red,yellow,green);
+        }
+        div.mgrad{
+            height: 30mm;
+            width: 50mm;
+            background-image: repeating-radial-gradient(red 5%,yellow 15%,green 50%)
+        }
+       
+        div.nor{
+            height: 30mm;
+            width: 30mm;
+            background-image: conic-gradient(red,yellow,green,blue) ;
+        }
+        div.rd{
+            height: 30mm;
+            width: 30mm;
+            background-image: conic-gradient(red,yellow,green,blue) ;
+            border-radius: 50%;
+        }
+        div.eng{
+            height: 30mm;
+            width: 30mm;
+            background-image: conic-gradient(red 0deg 25%,yellow 90deg 25%,green 180deg 25%,blue 270deg 25%) ;
+        }
+        div.mcone{
+            height: 30mm;
+            width: 30mm;
+            background-image: repeating-conic-gradient(red 5%,yellow 10%,green 40%,blue 50%) ;
+        }
+        
+    </style>
+</head>  
+<body>
+    <h1>CSS 3</h1>
+    <br>
+    <p>shadow,orientation,transformetion,gradient</p>
+    <div id="box">
+        <p>shadow Box Properties</p>
+    </div>
+    <hr>
+    <br>
+     <p class="ori">Hello ADIT</p>
+     <hr>
+     <br>
+
+     <div style="background-color: lightgreen;">
+        <h1>transformetion property of css</h1>
+        <br>
+        <p>Transfrom:rotate(20deg)</p>
+        <div class="a">
+            <h2>Hello ADIT</h2>
+        </div>
+        <br>
+        <p>Transfrom:skewY(20deg)</p>
+        <div class="b">
+            <h2>Hello ADIT</h2>
+        </div>
+        <br>
+        <p>Transfrom:scaleY(1.8)</p>
+        <div class="c">
+            <h2>Hello ADIT</h2>
+        </div>
+     </div>
+     <hr>
+     <br>
+     <table style="background-color: pink;">
+        <div>
+            <tr>
+                <td><div class="lr"></div></td>
+                <td><div class="normal"></div></td>
+                <td><div class="nor"></div></td>
+            </tr>
+            <tr>
+                <td> <div class="tb"></div></td>
+                <td> <div class="persent"></div></td>
+                <td> <div class="rd"></div></td>
+            </tr>
+            <tr>
+                <td><div class="angle"></div></td>
+                <td><div class="shape"></div></td>
+                <td><div class="eng"></div></td>
+            </tr>
+            <tr>
+                <td><div class="mliner"></div></td>
+                <td><div class="mgrad"></div></td>
+                <td><div class="mcone"></div></td>
+
+            </tr>
+         </div>
+     </table>
+     
+</body>
+</html>

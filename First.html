@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bigning</title>
+    <link rel="stylesheet" href="mycss.css">
+    <script>
+        function def(){
+            document.getElementById('hd').innerHTML="Hello Dear!";
+        }
+    </script>
+</head>
+<body>
+    <h1>What can JavaScript do?</h1>
+    <p id="js"> JavaScript can change HTML contain</p>
+    <button type="button" onclick="document.getElementById('js').innerHTML = 'Hello world!'">click me!</button>
+    <br>
+    <p>JavaScript can change the style of given element</p>
+    <button type="button" onclick="document.getElementById('js').style.fontSize ='50px'">click me!</button>
+    <br>
+    <p>change position</p>
+    <button type="button" onclick="document.getElementById('js').style.position = 'absolute';">click me!</button>
+    <br>
+    <p>Displya hide</p>
+    <button type="button" onclick="document.getElementById('js').style.display = 'none';">click me!</button>
+    <br>
+    <p>Show the HTML Displya</p>
+    <button type="button" onclick="document.getElementById('js').style.display='block';">click me!</button>
+    <div style="background-color: lightgreen;">
+        <button onclick="document.getElementById('myImage').src='bulb_on.gif'">Turn on the light</button>
+        <img id="myImage" src="bulb_of.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='bulb_of.gif'">Turn off the light</button>
+    </div>
+
+    <div class="sr">
+        <h2>Script part started</h2>
+        <p id="hd">JavaScript in Header section</p>
+        <button type="button" onclick="def()">Try it</button>
+    </div>
+    <div class="bd">
+        <h1>JavaScript in Body tag</h1>
+        <p id="bod">In this Body script used</p>
+        <button type="button" onclick="myfunction()">Try it</button>
+        <script>
+            function myfunction(){
+                document.getElementById("bod").innerHTML="javascript: change the text"
+            }
+        </script>
+    </div>
+    <div class="exjs">
+        <h1>External JavaScript</h1>
+        <p id="dom">In this we have to used external JavaScript</p>
+        <button type="button" onclick="fn()">Do it</button>
+        <p>In this we have to link the external js file</p>
+        <p>In External js file having function fn() which is used in this thml file</p>
+        <script src="myjavascript.js"></script>
+    </div>
+
+    <div>
+        <h1>JavaScript Output</h1>
+        <hr>
+        <p><big><b>javascript can display data in different  ways:</b></big></p>
+        <ul>
+            <li>write in to HTML using innerHTML</li>
+            <li>wWriting into the HTML output using document.write()</li>
+            <li>Writing into an alert box, using window.alert().</li>
+            <li>Writing into the browser console, using console.log()</li>
+        </ul>
+        <hr>
+        <h1>Write in to HTML using innerHTML</h1>
+        
+    </div>
+</body>
+</html>
