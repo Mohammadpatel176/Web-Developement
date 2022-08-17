@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance HTML Form</title>
+</head>
+<body style="background-color:aqua;">
+    <h1>HTML Advance Form</h1>
+    <div style="background-image: repeating-linear-gradient(45deg,pink,yellow,red,blue);">
+        <table>
+            <th align="center">Loggin Form</th>
+            <body>
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" name="fname" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" name="lname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label>E-mail</label></td>
+                    <td><input type="Email" name="Email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label>Choose File</label></td>
+                    <td><input type="file" name="file" placeholder="Choose a file to upload"></td>
+                </tr>
+                <tr>
+                    <td><label>Comments</label></td>
+                    <td><input type="text"  name="coments" placeholder="Comments" ></td>
+                </tr>
+                <tr>
+                    <td><label >D.O.B</label></td>
+                    <td><input type="Date" name="Date" placeholder="Date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Stander">Choose current stander</label>
+                    </td>
+                   <td>
+                    <select name="Stander" id="Stander" >
+                        <option value="L KG">L KG</option>
+                        <option value="U KG">U KG</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="1 Year">1 Year</option>
+                        <option value="2 year">2 Year</option>
+                        <option value="Greduation">Greduation</option>
+                    </select>
+                   </td> 
+                </tr>
+                <tr aria-rowspan="2">
+                    <td><label>You have additional e-mail?: </label></td>
+                    <td><label>Yes:</label><input type="radio"><label>No:</label><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td><label>Range of Progress:</label></td>
+                    <td> <input type="range" placeholder="Range" value="10" pattern="%" ></td>
+                </tr>
+                <tr>
+                    <td> <label>Message</label></td>
+                    <td colspan="5cm" rowspan="5cm"><textarea name="Your Message" id="1" placeholder="Type your message"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button>submit</button></td>
+                </tr>
+            </body>
+        </table>
+        
+     </form>
+
+
+    </div>
+</body>
+</html>

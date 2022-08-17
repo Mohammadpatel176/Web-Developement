@@ -1,0 +1,42 @@
+body{
+    background-color: aqua;
+}
+#m1{
+    background-color: bisque;
+   border: 10mm;
+   border-color: black;
+   border-style: solid;
+    margin: 20% 20% 20% 20%;
+    padding: 30mm;
+    height: 80%;
+
+}
+h1{
+    background-attachment: fixed;
+    background-color: red;
+    text-align: center;
+    font-family: inherit;
+}
+.top-level{
+    background-color: grey;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    padding: 20px;
+}
+.middle-level{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border: 20px solid black;
+    margin-left: 260px;
+
+}
+.last-level{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    margin-left: 500px;
+
+}

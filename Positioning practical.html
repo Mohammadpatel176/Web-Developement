@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning practical in CSS</title>
+    <style>
+        .static{
+            position: static;
+            background-color: antiquewhite;
+            border: 1mm solid black;
+            width: 400px;
+        }
+        .relative{
+            position: relative;
+            left: 30px;
+            background-color: rgb(235, 235, 126);
+           border: 1mm solid black;
+           width: 400px;
+        }
+        .fixed{
+            background-color: mediumturquoise;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid black;
+        }
+        .relative1{
+            position: relative;
+            background-color: rgb(208, 247, 247);
+            width: 400px;
+            height: 200px;
+            border: 3px solid black;
+        }
+        .absolute{
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 200px;
+            width: 100px;
+            border: 3px solid black;
+        }
+        .s{
+            background-color: rgba(204, 109, 190, 0.251);
+            margin-bottom: 100px;
+            margin-left: 100px;
+            width: 300px;
+            height: 200px;
+            padding-bottom: 200px;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: lightgreen;
+            border: 2px solid lightblue;
+            color: black;
+        }
+       .zindex{
+        height: 300px;
+        width: 300px;
+        padding-left: 100px;
+       }
+       #a{
+        position: absolute;
+        z-index: -1;
+
+       }
+    </style>
+</head>
+<body style="background-color: #FEFCFF;">
+    <h1 align="center">The position Property</h1>
+    <p>
+        The <abbr title="position property in CSS"> position</abbr> property specifies the type of Positioning method used for an element
+        <br>
+        There are five different position values:
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+    </p>
+    <br>
+    <h2>position: staric;</h2>
+    <p>An element with position: static; is not positiond in nay special way; it is always positioned according to normal flow of the page</p>
+    <div class="static">
+        This div element has position: static;
+    </div>
+    <br>
+    <h2>position: relative;</h2>
+    <p>An element with position: relative; is positiond relative to its normal position:</p>
+    <div class="relative">The div element has position: relative;</div>
+    <br>
+    <h2>position: fixed;</h2>
+    <p>An element with position: fixed; is positioned relative to the viewport,which means it always stays in the same palce even page is scrolled;</p>
+    <div class="fixed">The div element has position: fixed;</div>
+    <br>
+    <h2>position: absolute;</h2>
+    <p>An element with position: absolute; is positioned relative to nearest positioned ancestor (instead of positioned relative to viewport,like fixed):</p>
+    <div class="relative1">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+    </div>
+    <br>
+    <h2>position: sticky;</h2>
+    <div class="s">
+        <div class="sticky"><b> This div element has position: sticky;</b></div>
+        <p>In this example, the sticky element stick top of the page when you reach its scroll position.</p>
+        <p>
+            Scroll backup to remove stickness.
+        </p>
+        <p>Some fruites</p>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Grapes</li>
+            <li>Pineapple</li>
+            <li>Pomegranate</li>
+            <li>Avocado</li>
+            <li>Coconut</li>
+            <li>Papaya</li>
+            <li>Watermelon</li>
+            <li>strawherry</li>
+            <li>cherry</li>
+            <li>Apricot</li>
+            <li>Kiwi</li>
+            <li>Jackfruit</li>
+            <li>Lime</li>
+            <li>Peach</li>
+            <li>pear</li>
+            <li>Tamarind</li>
+        </ul>
+    </div>
+    <br>
+    <div class="zindex">
+        <h1>Z index Property</h1>
+        <img  id='a' src="Bg1.jpg" alt="Background" height="200px" width="300px">
+        <p>
+            Because the image has a z-index of -1 it will be place behind the heading
+        </p>
+    </div>
+</body>
+</html>

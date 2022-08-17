@@ -1,0 +1,21 @@
+
+.sr{
+    background-color: cornflowerblue;
+    position:sticky;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.sr h2{
+    color: aqua;
+}
+.bd{
+    background-attachment: fixed;
+    background-color: bisque;
+}
+.exjs{
+    background-color: burlywood;
+}
+.exjs button{
+    background-color: aqua;
+}
